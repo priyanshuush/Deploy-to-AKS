@@ -26,7 +26,7 @@ stages:
         Dockerfile: '$(Build.SourcesDirectory)/app/Dockerfile'
         tags: |
           $(tag)
-           
+          latest
 
     - task: PublishPipelineArtifact@1
       inputs:
